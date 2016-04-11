@@ -1,0 +1,154 @@
+// POPCORN-THEME: Kittens JIAV theme by @GHOSTBEAR
+
+//Fonts
+    $Font = 'Open Sans'
+    $MainFont = 'Open Sans Semibold'
+    $MainFontBold = 'Open Sans Bold'
+    $AlternateFont = sans-serif    
+    $ButtonFont = 'Open Sans Semibold'
+
+//Main app
+    $BgColor1 = #121314
+    $BgColor2 = #121314
+
+    $Text1 = #FFF
+    $Text2 = #E5E5E5
+    $Text3 = #E5E5E5
+    $Text4 = darken(#E5E5E5,5)
+    $TextError = #84BD00
+
+    $CloseButton = #CC0000
+    $CloseButtonHover = darken(#CC0000,5)
+    
+    $SpinnerColor1 = rgba(#fff,.2)
+    $SpinnerColor2 = #84BD00
+
+    $ScrollBarBg = #292A2B
+    $ScrollBarThumb = #84BD00
+    $ScrollBarThumbHover = #8fcc00
+
+//Top Bar
+    $TitleBarBg = #222326
+    $TitleBarText = #fff
+    $FullScreenButton = #fff
+    $FullScreenButtonHover = #84BD00
+
+    $FilterBarBg = #222326
+    $FilterBarText = #fff
+    $FilterBarTextHover = #84BD00
+    $FilterBarActive = #84BD00
+
+    $SearchBoxBg = rgba(#000,.3)
+
+    $DropDownBg = #222326
+    $DropDownBgHover = #818285
+    $DropDownTextHover = #FFF
+    $DropDownText = lighten(#818285,10)
+    $DropDownOpacity = 0.95
+
+    $FilterBarIcon = lighten(#818285,10)
+    $FilterBarIconHover = #84BD00
+	$FilterBarIcon-PosterWidth = #84BD00
+    
+    $TopBarShadow = 0px 6px 8px -4px rgba(0, 0, 0, 0)
+
+//Buttons
+    $ButtonBg = #84BD00
+    $ButtonBgHover = darken(#84BD00,4)
+    $ButtonBgActive = darken(#84BD00,6)
+    
+    $ButtonBgDisabled = #FEFEFE
+    
+    $ButtonBgOk = #27AE60
+    $ButtonBgWarning = #F15153
+    
+    $ButtonText = #fff
+    $ButtonTextHover = #fff
+    
+    $ButtonRadius = 3px
+
+//Checkbox
+    $CheckboxBg = #545454
+    $CheckboxCheck = #4bfff4
+
+//Posters
+    $PosterRadius = 0px
+    $PosterHoverBorder = #84BD00
+    $PosterHoverOverlay = rgba(#333, .6)
+    $PosterShadow = 0px 0px 0px
+
+//TV Series
+    $ShowBgColor1 = $BgColor1
+    $ShowBgColor2 = $BgColor1
+
+    $EpisodeDetailsBg = $BgColor1
+    
+    $ShowText1 = #FFF
+    $ShowText2 = #FEFEFE
+
+    $SaisonListText = #FFF
+    $EpisodeListText = #FFF
+    
+    $EpisodeSelectorBg = #84BD00
+	$EpisodeSelectorHover = lighten($ShowBgColor2,6%)
+    $EpisodeSelectorText = #fff
+
+	$ShowWatchedIcon_false = rgba(#FFF,0.3)
+	$ShowWatchedIcon_hover = rgba(#FFF,0.6) 
+	$ShowWatchedIcon_true = #84BD00
+    
+    $QualitySelector = rgba(43, 110, 210, 0.84)
+
+// Notifications
+    $NotificationText = #fff
+    $NotificationInfo = #3498DB
+    $NotificationSuccess = #27AE60
+    $NotificationWarning = #dbb756
+    $NotificationOrange = #f07f53
+    $NotificationError = #f15153
+    $NotificationBorderColor = #000
+
+    $NotificationBtn = #000
+    $NotificationBtnText = #fff
+
+    $NotifAlertBg = #000
+    $NotifAlertText = #fff
+
+//File selector
+	$FileSelectorText = darken(#FFF,5)
+	$FileSelectorBg = rgba(0,0,0, 0)
+	$FileSelectorShadow = rgba(0, 0, 0, 0)
+
+//Settings
+    $SettingsCategoriesText = #FFF
+    $SettingsSeparator = rgba(#FFF,.1)
+
+    $InputBoxBg = darken(#818285,4)
+    $InputBoxText = #FFF
+    
+    $SettingsText1 = darken(#FFF,5)
+    $SettingsText2 = rgba(darken(#FFF,5),.7)
+
+    $SettingsButtonText = #fff
+    $SettingsButtonTextHover = #fff
+
+//Misc
+    $FavoriteColor = #CC0000
+
+    $PngLogo = brightness(1.3)
+    
+//Player
+	$PlayerColor = #84BD00
+
+
+// POPCORN-THEME: JIAV - END
+
+@import 'views/app'
+
+//additionnal set of rules
+.init-progressbar > div,
+.loading .state .loading-progressbar > div
+    background-color #84BD00
+.show-quality-container .toggle,
+.movie-detail .content-box .bottom-container .movie-quality-container .switch .toggle
+    background #84BD00

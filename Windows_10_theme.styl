@@ -1,0 +1,293 @@
+// POPCORN-THEME: WINDOWS 10
+
+//WINDOWS 10 Color scheme
+    aWhite = #fff
+    aLightGrey = #e6e6e6
+    aDarkGrey = #999
+    aLightBlue = #2775ec
+    aDarkBlue = #0063b1
+    aLightFont = #5c5c5c
+    aDarkFont = #000
+    aScrollbar = #c2c2c2
+    aSelected = #91b9d8
+    aSelectedHover = #619ccb
+    aActiveBlue = #9ecdf2
+    aButton = #ccc
+    aButtonActive = #999
+
+//Fonts
+    $Font = 'Open Sans'
+    $MainFont = 'Segoe UI semibold', 'Open Sans Semibold'
+    $MainFontBold = 'Open Sans Bold'
+    $AlternateFont = sans-serif    
+    $ButtonFont = 'Open Sans Semibold'
+
+//Main app
+    $BgColor1 = aWhite
+    $BgColor2 = aWhite
+
+    $Text1 = aDarkFont
+    $Text2 = aLightFont
+    $Text3 = aLightFont
+    $Text4 = darken(aLightFont,5)
+    $TextError = aDarkGrey
+
+    $CloseButton = rgba(aDarkBlue, .8)
+    $CloseButtonHover = aDarkBlue
+    
+    $SpinnerColor1 = rgba(aDarkFont,.35)
+    $SpinnerColor2 = aLightBlue
+
+    $ScrollBarBg = rgba(aLightGrey, 0)
+    $ScrollBarThumb = aScrollbar
+    $ScrollBarThumbHover = aDarkGrey
+
+//Top Bar
+    $TitleBarBg = aLightGrey
+    $TitleBarText = aDarkFont
+    $FullScreenButton = aDarkGrey
+    $FullScreenButtonHover = aDarkBlue
+
+    $FilterBarBg = aLightGrey
+    $FilterBarText = aDarkFont
+    $FilterBarTextHover = aLightBlue
+    $FilterBarActive = aDarkBlue
+
+    $SearchBoxBg = aWhite
+
+    $DropDownBg = aWhite
+    $DropDownBgHover = aSelected
+    $DropDownTextHover = aDarkFont
+    $DropDownText = aDarkFont
+    $DropDownOpacity = 1.00
+
+    $FilterBarIcon = aLightFont
+    $FilterBarIconHover = lighten(aDarkFont, 10)
+    $FilterBarIcon-PosterWidth = aDarkBlue
+    
+    $TopBarShadow = 0px 6px 8px -4px rgba(0, 0, 0, 0)
+
+//Buttons
+    $ButtonBg = aButton
+    $ButtonBgHover = darken(aButton, 8)
+    $ButtonBgActive = aButtonActive
+    
+    $ButtonBgDisabled = rgba(aButton, .5);
+
+    $ButtonBgOk = #27AE60
+    $ButtonBgWarning = #cf283a
+    
+    $ButtonText = aDarkFont
+    $ButtonTextHover = aDarkFont
+    
+    $ButtonRadius = 0px
+
+//Checkbox
+    $CheckboxBg = darken(aLightGrey, 5)
+    $CheckboxCheck = aLightBlue
+
+//Posters
+    $PosterRadius = 0px
+    $PosterHoverBorder = aLightBlue
+    $PosterHoverOverlay = rgba(23, 24, 27, 0.3)
+    $PosterShadow = 0px 0px 0px
+
+//TV Series
+    $ShowBgColor1 = aWhite
+    $ShowBgColor2 = aLightGrey
+
+    $EpisodeDetailsBg = aWhite
+    
+    $ShowText1 = aDarkFont
+    $ShowText2 = aLightFont
+
+    $SaisonListText = aDarkFont
+    $EpisodeListText = rgba(aDarkFont, .8)
+    
+    $EpisodeSelectorBg = aSelected
+    $EpisodeSelectorHover = aSelectedHover
+    $EpisodeSelectorText = aDarkFont
+
+    $ShowWatchedIcon_false = rgba(aDarkFont,0.3)
+    $ShowWatchedIcon_hover = rgba(aDarkFont,0.6) 
+    $ShowWatchedIcon_true = rgba(aDarkFont,0.7)
+
+    $QualitySelector = aLightBlue
+
+//File selector
+    $FileSelectorText = aDarkFont
+    $FileSelectorBg = rgba(0,0,0,0)
+    $FileSelectorShadow = rgba(0,0,0,0)
+
+//Settings
+    $SettingsCategoriesText = aDarkText
+    $SettingsSeparator = rgba(#000,.1)
+
+    $InputBoxBg = darken(aLightGrey, 5)
+    $InputBoxText = aDarkFont
+    
+    $SettingsText1 = aDarkFont
+    $SettingsText2 = aLightFont
+
+    $SettingsButtonText = rgba(aDarkFont, .9)
+    $SettingsButtonTextHover = aDarkFont
+
+// Notifications
+    $NotificationText = aDarkFont
+    $NotificationInfo = aWhite
+    $NotificationSuccess = aWhite
+    $NotificationWarning = lighten(#dbb756, 7)
+    $NotificationOrange = lighten(#f07f53, 15)
+    $NotificationError = lighten(#cf283a, 15)
+    $NotificationBorderColor = aDarkGrey
+
+    $NotificationBtn = aButton
+    $NotificationBtnText = aDarkFont
+
+    $NotifAlertBg = #191d22
+    $NotifAlertText = #fff
+
+//Misc
+    $FavoriteColor = #e74c3c
+    $WarningColor = #FFFF00
+    $PngLogo = brightness(0.3)
+    $PngLogo_BgColo1 = brightness(0.2)
+    
+//Player
+    $PlayerColor = aDarkBlue
+
+
+// POPCORN-THEME: WINDOWS 10 - END
+
+@import 'views/app'
+
+//additionnal set of rules
+.init-progressbar > div,
+.loading .state .loading-progressbar > div
+    background-color aDarkBlue
+.show-quality-container .toggle,
+.movie-detail .content-box .bottom-container .movie-quality-container .switch .toggle
+    background aLightBlue
+.filter-bar, #header
+    opacity 1
+
+
+// simulate windows 10 borders
+.drop-indicator
+    background-color aDarkBlue
+    display block
+    z-index 99999
+.drop-indicator.top
+    height 1px
+    left 0px
+.drop-indicator.bottom
+    height 1px
+    right 0px
+.drop-indicator.right
+    width 1px
+    top 0px
+.drop-indicator.left
+    width 1px
+    bottom 0px
+
+// remove spinner bg
+#content .main-browser .list-region .list .spinner
+    background rgba(aWhite,0.2)
+
+// item watched
+.item.watched
+    opacity 0.65
+
+// movie details
+.movie-detail .backdrop,
+.movie-detail .backdrop.fadein
+    display none
+.movie-detail .backdrop-overlay
+    opacity 0
+.movie-detail .content-box .meta-container .title,
+
+.movie-detail .content-box .meta-container .overview,
+.movie-detail .content-box .bottom-container .favourites-toggle,
+.movie-detail .content-box .bottom-container .watched-toggle,
+.movie-detail .content-box .bottom-container .sub-dropdown,
+.movie-detail .content-box .bottom-container .movie-quality-container .q720,
+.movie-detail .content-box .bottom-container .movie-quality-container .q1080
+    color aDarkFont
+.movie-detail .content-box .meta-container .metadatas .dot
+    background-color rgba(aLightFont, .7)
+.movie-detail .content-box .meta-container .metadatas .magnet-link
+    color aDarkGrey
+.movie-detail .content-box .bottom-container .movie-quality-container .switch
+    border 2px solid darken(aLightGrey,10)
+.movie-detail .poster-box .mcover-image
+    box-shadow 0px 0px 7px
+.movie-detail .content-box .meta-container .metadatas .metaitem,
+.movie-detail .content-box .meta-container .metadatas .rating-container .number-container
+    color aLightFont
+
+// show details
+.tv-poster
+    background rgba(0,0,0,0)
+.tv-poster .tv-poster-background
+    display none
+.tv-meta-data .tv-dot
+    background-color rgba(aLightFont, .7)
+.tv-meta-data .favourites-toggle,
+.tv-meta-data .tv-overview,
+.tv-meta-data .tv-title,
+.tv-meta-data .show-watched-toggle
+    color aDarkFont
+.episode-info .show-magnet-link
+    color aDarkGrey
+.episode-info .show-quality-container .quality-selector .disabled
+    opacity 0.5
+.tv-poster .tv-cover
+    box-shadow 0px 0px 7px
+.tv-meta-data .tv-year,
+.tv-meta-data .tv-runtime,
+.tv-meta-data .tv-status,
+.tv-meta-data .tv-genre,
+.tv-meta-data .rating-container-tv .number-container-tv
+    color aLightFont
+
+// loading
+.loading .state .cancel-button
+    background transparent
+
+// file selector & torrent coll
+.torrent-collection-container .content .torrents-info ul li.file-item a:hover, .torrent-collection-container .content .onlinesearch-info ul li.file-item a:hover, .torrent-collection-container .content .torrents-info ul li.result-item a:hover, .torrent-collection-container .content .onlinesearch-info ul li.result-item a:hover,
+.file-selector-container .content ul li.file-item a:hover
+    color aLightBlue
+
+// about
+.about-container .icon-title,
+.about-container .content .icons_social
+    -webkit-filter brightness(0.1)
+.about-container .content,
+.about-container .content .last-line,
+.about-container .content .title-version a,
+.about-container .content .title-issue a
+    color aDarkFont
+.about-container
+    background-image none
+.about-container .overlay-content
+    background rgba(0,0,0,0)
+
+// notification
+#notification .notification .close
+    color aDarkFont
+// player
+/*.vjs-popcorn-skin .vjs-control-bar, .vjs-popcorn-skin .vjs-control-window
+    background-color rgba(aWhite,.9)
+.vjs-popcorn-skin .vjs-play-control:before,
+.vjs-popcorn-skin .vjs_smallersub_button.vjs-control:before,
+.vjs-popcorn-skin .vjs_biggersub_button.vjs-control:before,
+.vjs-popcorn-skin .vjs-fullscreen-control:before,
+.vjs-popcorn-skin .vjs-slider-handle:before,
+.vjs-popcorn-skin .vjs-volume-handle:before,
+.vjs-popcorn-skin .vjs-time-controls,
+.vjs-time-divider
+    color aDarkFont
+.vjs-popcorn-skin .vjs-subtitles-button:before,
+.vjs-popcorn-skin .vjs-mute-control:before, .vjs-popcorn-skin .vjs-volume-menu-button:before
+    -webkit-filter brightness(0.1)*/
